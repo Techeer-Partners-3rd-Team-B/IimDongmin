@@ -11,41 +11,52 @@ const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    borderBlockColor: theme.palette.background,
   }));
 
 export default function Container() {
-    const gridAddStyle_1 = {
-        height: '75px', // 원하는 높이 값으로 설정
-      };
-      const gridAddStyle_2 = {
-        height: '180px', // 원하는 높이 값으로 설정
-      };
-      const gridLoginStyle = {
-        height: '100px', // 원하는 높이 값으로 설정
-      };
-      const gridNewsStyle = {
-        height: '350px', // 원하는 높이 값으로 설정
-      };
-
-
     return (
-        <>
+        <div className="Container">
         <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={3}>
-          <Grid xs={8}>
-            <Item style ={ gridAddStyle_1 }>광고1</Item>
+        {/* 좌측컨테이너 */}
+        <Grid container direction={"row"} spacing={3}>
+          <Grid container direction={"column"} xs={8}>
+          <Grid>
+            <Item style ={ {height : '75px'} }>광고1</Item>
           </Grid>
-          <Grid xs={4}>
-            <Item style = { gridLoginStyle }>로그인창</Item>
+          <Grid>
+            <Item style = { {height : '350px'} }>뉴스</Item>
           </Grid>
-          <Grid xs={8}>
-            <Item style = { gridNewsStyle }>뉴스</Item>
+          <Grid>
+            <Item style={{ height : '450px'}}>쇼핑</Item>
           </Grid>
-          <Grid xs={4}>
-            <Item style = { gridAddStyle_2 }>광고2</Item>
+          <Grid>
+            <Item style = { {height : '500px'} }>추천</Item>
+            </Grid>
           </Grid>
+        {/* 우측컨테이너 */}
+          <Grid container direction={"column"} xs={4}>
+          <Grid>
+            <Item style = { {height : '100px'} }>로그인창</Item>
+          </Grid>
+            <Grid>
+            <Item style = { {height : '180px'} }>광고2</Item>
+            </Grid>
+            <Grid>
+            <Item style = { {height : '50px'} }>해피빈</Item>
+            </Grid>
+            <Grid>
+            <Item style={{height : '250px'}}>날씨</Item>
+            </Grid>
+            <Grid>
+            <Item style = {{ height : '250px' }}>증시</Item>
+            </Grid>
+            <Grid>
+            <Item style = { {height : '600px'} }>위젯보드</Item>
+            </Grid>
+            </Grid>
         </Grid>
       </Box>
-        </>
+        </div>
     )
 }

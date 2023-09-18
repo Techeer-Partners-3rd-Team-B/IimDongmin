@@ -6,7 +6,16 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
+.App {
+  margin:0;
+  height: 100vh;
+}
+.Header {
+  padding: 50px 140px;
+}
+.Container {
+  padding: 0px 140px;
+}
 .left_icon {
   display: flex;
 }
@@ -45,3 +54,10 @@ nav {
   margin-bottom: 50px;
 }
 
+.footer {
+  margin-top: 30px;
+  background-color: rgb(242, 242, 242);
+  height: 30vh;
+  border-top: 1px solid rgb(203, 203, 203);
+  width: 100%;
+}
