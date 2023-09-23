@@ -1,12 +1,13 @@
 import React from "react";
 import '../App.css';
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return(
     <div className="Header">
     <nav header_icon>
         <div class="left_icon">
-          <div class="menu_icon"><a href="#"><i class="fa-solid fa-bars fa-2xl" style={{color: "#19191a",}}></i></a></div>
+          <div class="menu_icon"><Link to="/about"><i class="fa-solid fa-bars fa-2xl" style={{color: "#19191a",}}></i></Link></div>
           <div class="pay_icon"><a href="#"><i class="fa-brands fa-apple-pay fa-2xl" style={{color: "#19191a",}}></i></a></div>
         </div>
         <div class="right_icon">

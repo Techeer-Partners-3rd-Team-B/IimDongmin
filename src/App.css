@@ -61,3 +61,40 @@ nav {
   border-top: 1px solid rgb(203, 203, 203);
   width: 100%;
 }
+
+.login_Btn {
+  width: 85%;
+  height: 40%;
+}
+
+.longin_Container {
+  border-left: 1px solid #9b9b9b;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.login_Title {
+  display: flex;
+  justify-content: center;
+  color: #19CE60;
+  font-size: 50px;
+  font-weight:bold;
+  margin-top: 50px;
+}
+
+.language_Box {
+  display: flex;
+  justify-content: end;
+}
+
+.login_Page {
+  margin: 20px 25%;
+}
+
+.login_Box {
+  margin: 0px 15%;
+}
+
+.login_Button {
+  margin-top:10px;
+}
