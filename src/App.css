@@ -10,12 +10,6 @@ nav {
   margin:0;
   height: 100vh;
 }
-.Header {
-  padding: 50px 140px;
-}
-.Container {
-  padding: 0px 140px;
-}
 .left_icon {
   display: flex;
 }
@@ -34,15 +28,6 @@ nav {
   margin-top: 36px;
   width: 100%;
   height: 5%;
-}
-
-.searchbar {
-  width: 60%;
-  font-size: large;
-  padding: 24px;
-  border-color: #19CE60;
-  border-radius: 24px;
-  
 }
 
 .icon_container {
@@ -84,7 +69,7 @@ nav {
 
 .language_Box {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .login_Page {
